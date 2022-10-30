@@ -1,5 +1,6 @@
 package com.example.elasticsearchstudy.domain;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
@@ -16,6 +17,7 @@ import java.io.Serializable;
 @Component
 @Data
 @Document(indexName = "hotel")
+@TableName("tb_hotel")
 public class Hotel implements Serializable {
 
     /** 酒店id*/

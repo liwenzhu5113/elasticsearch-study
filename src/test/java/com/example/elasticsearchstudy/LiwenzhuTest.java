@@ -122,11 +122,18 @@ public class LiwenzhuTest {
         System.out.println(nameList);
     }
 
+    /**
+     * 全文检索
+     */
     @Test
     public void fullTextQuery(){
         List<Hotel> hotelList = hotelRepository.findByAll("北京");
         System.out.println(hotelList);
     }
+
+    /**
+     * 排序
+     */
 
     @Test
     public void sortQuery() {
